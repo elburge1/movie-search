@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app='myApp'>
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Search</title>
+  <!-- styles -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="./css/main.css" rel="stylesheet" media="screen">
+  <base href='/' />
+</head>
+  <body>
+    <div class="container">
+      <div ng-controller="HomeController">
+        <h1>Angular OMDb movie app</h1>
+        <br />
+        <h4>Enter a movie title</h4>
+        <br />
+        <input type="text" ng-model="view.search" placeholder="Enter movie title" />
+        <button type="submit" class="btn-success" ng-click="view.makeUrl()">
+          Find it!
+        </button>
+        <div ng-view>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    <script src="./js/app.js" type="text/javascript"></script>
+    <script src="./js/controllers.js" type="text/javascript"></script>
+    <script src="./js/directives.js" type="text/javascript"></script>
+    <script src="./js/filters.js" type="text/javascript"></script>
+    <script src="./js/services.js" type="text/javascript"></script>
+  </body>
+</html>

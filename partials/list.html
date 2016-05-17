@@ -1,0 +1,11 @@
+<p>
+  double wat
+</p>
+<div>
+  <ul>
+    <li ng-repeat="movie in view.movies">
+      <a href="/movie/{{movie.imdbID}}/individual" ng-click='view.singleMovie()'>{{movie.Title}}</a>
+      {{movie.Year}}
+    </li>
+  </ul>
+</div>
